@@ -1,70 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+#root{
+  width: 1800px; 
+  margin-left:auto;
+  margin-right:auto;
+}
+.Sidebar{
+  position: fixed;
+  margin-right: 40px;
+  top: 40px;
+  display: block;  
+}
+.Sidebar .nav-item{ 
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+  background-origin: padding-box;
+}
+.Sidebar .nav-link{
+  color: #5f1c92;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;  
+}
+.Sidebar .nav-link:hover{
+  background-color: #4e2f845b;
+  color: white;
+}
+.Sidebar .nav-link.active{
+  background-color: #4e2f845b;
+  color: white;
+}
+
 
 body {
   background-color: #242424;
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  margin: 0 auto;
   padding: 2rem;
   text-align: center;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
- 
-  color-scheme: light dark;
+  color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-.nav{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 65px;
-  padding: 0 1rem;
-  background-color: #393434;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  box-shadow: 0 0 10px rgba(185, 9, 255, 0.2);
 }
 
-#root{
-  margin-left:auto;
-  margin-right:auto;
+
+/* .App.container{
+  margin-top: 300px;
+} */
+.landing-header{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 250px;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.items{
+  display: grid;
+  margin-left: 250px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  list-style: none;
+}
+.items li{
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  background-color: #3934344e;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: 0.5s;
 }
+.items li:hover{
+  background-color: #4e2f8435;
+
+}
+
+
 .card{
   margin-top: 10px;
-  height: 500px;
-  width: 400px;
+  margin-bottom: 10px;
+  margin-left: 250px; 
+  padding: 20px;
   color: azure;
-  background-color: #393434;
+  background-color: #3934344e;
+  border-radius: 10px;   
+  transition: 0.5s;
+}
+
+.card-img{
+  width: 300px;
+  height: 300px;
   border-radius: 10px;
+}
+.card-img:hover{
+  width: 500px;
+  height: 500px;
+  transition: 1s;
+  box-shadow: 0 0 100px rgb(0, 6, 87);
+
+}
+/* 
+.hstack{
+  position: fixed;
+  top: 0;
+  margin-left: 250px;
+  height: 250px;
+  width: 100%;
+  background-color: #3934344e;
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/29/15/05/drink-1870139_960_720.jpg");
+} */
+
+
+
+.btt{
+  gap: 10px;
+  display: flex;
+  bottom: 2;
+}
+.control-btt{
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s;
    
-} 
-.card:hover{
-  box-shadow: 0 0 100px rgba(0, 6, 87, 0.7);
+}
+.learn-card{
+  color: white;
+  margin-left: 250px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+  padding: 5%;
+ 
+}
+.learn-card:hover{
+  background-color: #4e2f8435;
+  color: white;
+  transition: 0.5s;
+}
+.form-input{
+  margin-left: 200px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
 }
 
-.Sidebar{
-  gap:10px;
-  align-self: flex-start;
-  margin-right:15px;
-  position: sticky;
-  top:65px;
+.result-h1{
+  color: white;
+  margin-left: 200px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
 }
 
-.Sidebar .nav-item .active {
-  background-color: hotpink;
-}

@@ -21,14 +21,35 @@ export default function Sidebar() {
   return (
     <Navbar sticky="top" className="flex-column Sidebar">
       <Nav.Item>
-        <Nav.Link as={NavLink} to="/posts">
-          Posts
+        <Nav.Link as={NavLink} to="/">
+          Home
         </Nav.Link>
       </Nav.Item>
+      <Nav.Item>
+            <Nav.Link as={NavLink} to={"/nonalcoholic"}>
+              Non Alcoholic
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link as={NavLink} to={"/alcoholic"}>
+              Alcoholic
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link as={NavLink} to={"/learn"}>
+              Learn
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link as={NavLink} to={"/search"}>
+              Search
+            </Nav.Link>
+          </Nav.Item>
       {user.token || localStorage.getItem('token') ? (
         <>
+         
           <Nav.Item>
-            <Nav.Link as={NavLink} to={`/user/${user.username}`}>
+            <Nav.Link as={NavLink} to={`/UserPage/${user.username}`}>
               My Page
             </Nav.Link>
           </Nav.Item>
@@ -52,11 +73,7 @@ export default function Sidebar() {
           </Nav.Item>
         </>
       )}
-      <Nav.Item>
-        <Nav.Link as={NavLink} to="/workouts">
-          Workouts
-        </Nav.Link>
-      </Nav.Item>
+     
     </Navbar>
   );
 }

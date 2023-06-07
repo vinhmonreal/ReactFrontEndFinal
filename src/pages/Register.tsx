@@ -48,9 +48,17 @@ export default function Register() {
       navigate('/')
     }
   }
+    useEffect(()=>{
+      const a = document.getElementsByClassName('hstack')[0] as HTMLElement
+      a.style.display = 'none'
+    },[])
+  
+     
+   
 
   return (
-    <Body makepost={false} sidebar={ false }>
+    <Body sidebar={false} header={false}>
+      
       <h2>Register Page</h2>
       <form onSubmit={handleRegisterForm}>
         <label>Username:<br/>

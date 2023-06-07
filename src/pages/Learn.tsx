@@ -1,52 +1,63 @@
 
-// create input field and button to search for ingredients from www.thecocktaildb.com/api/json/v1/1/search.php?i=vodka
 
 import { useEffect, useState } from "react";
+import Body from "../components/Body";
 
 interface Ingredient {
-    idIngredient: string;
-    strIngredient: string;
-    strDescription: string;
-    strType: string;
-    strAlcohol: string;
-    strABV: string;
+    idIngredient: string | null;
+    strIngredient: string | null;
+    strDescription: string | null;
+    strType: string | null;
+    strAlcohol: string | null;
+    strABV: string | undefined;
 }
+
+type Ingredients = Ingredient[] | null;
 
 export default function Learn() {
     const [search, setSearch] = useState("");
-    const [ingredients, setIngredients] = useState<Ingredient[]>([]);
-    
+    const [ingredients, setIngredients] = useState<Ingredients>(null);
+
     useEffect(() => {
         (async () => {
-        const response = await fetch(
-            `https://www.thecocktaildb.com/api/json/v1/1/search.php?i=${search}`
-        );
-        if (response.ok) {
-            const data = await response.json();
-            setIngredients(data.ingredients);
-            console.log(data);
-        }
+            const response = await fetch(
+                `https://www.thecocktaildb.com/api/json/v1/1/search.php?i=${search}`
+            );
+            if (response.ok) {
+                const data = await response.json();
+                setIngredients(data.ingredients);
+                console.log(data);
+            }
         })();
-    }, [search]);
-    
+    }
+    , [search]);
+
     return (
+        <Body sidebar={true} header={true}>
         <div >
-        <input
-            type="text"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-        />
-        <button onClick={() => setSearch("")}>Clear</button>
-        {ingredients.length === 0 ? (
-            <p>No ingredients found</p>
-        ) : (
-            ingredients.map((ingredient) => (
-            <div key={ingredient.idIngredient} >
-                <h3>{ingredient.strIngredient}</h3>
-                <p>{ingredient.strDescription}</p>
-            </div>
-            ))
-        )}
+            <input
+                className="form-input"
+                type="text"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="Learn an ingredient"
+            />
+            {ingredients === null ? (
+                <p className="result-h1">No ingredients found</p>
+            ) : (
+                ingredients?.map((ingredient) => (
+                    <div className="learn-card">
+                        <h3>{ingredient.strIngredient}</h3>
+                        <p>{ingredient.strDescription}</p>
+                        <p>TYPE : {ingredient.strType}</p>
+                        <p>ALCOHOL : {ingredient.strAlcohol}</p>
+                        <p>ABV : {ingredient.strABV}</p>
+                    </div>
+
+                    
+                ))
+            )}
         </div>
+        </Body>
     );
 }

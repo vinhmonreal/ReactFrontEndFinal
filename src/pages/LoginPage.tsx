@@ -43,19 +43,24 @@ export default function LoginPage() {
       })
     }
   }
+  useEffect(()=>{
+    const a = document.getElementsByClassName('hstack')[0] as HTMLElement
+    a.style.display = 'none'
+  },[])
   
   return (
-    <Body makepost={false} sidebar={ false }>
+    <Body sidebar={false} header={true} >
       <h2>LoginPage</h2>
-      <form onSubmit={handleLoginForm}>
+      <form onSubmit={handleLoginForm} className='form'>
         <label>Username:<br/>
           <input type="text" ref={usernameField}/>
         </label><br/><br/>
         <label>Password:<br/>
           <input type="password" ref={passwordField}/>
         </label><br/><br/>
-        <button>Sign In</button>
-      </form>
+        <button>Sign In</button> <br />
+      <label >Need an account? </label><a href="/register">Register</a>
+      </form> 
     </Body>
   );
 }
