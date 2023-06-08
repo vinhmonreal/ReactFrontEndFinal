@@ -1,6 +1,6 @@
 
 import {  useRef, useState } from "react"
-import GetDrinksDetailsByID from "./GetDrinksDetailsByID"
+import GetDrinksDetailsByID from "../components/GetDrinksDetailsByID"
 import Body from "../components/Body"
 
 interface Drink {

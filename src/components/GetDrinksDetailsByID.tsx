@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
-import { detailsDrink } from "../components/DisPlayDrinksOnPage";
-import { ButtonAdd, ButtonRemove } from "../components/ButtonAddRemove";
+import { detailsDrink } from "./DisPlayDrinksOnPage";
+import { ButtonAdd, ButtonRemove } from "./ButtonAddRemove";
 import { AuthContext } from "../contexts/UserProvider";
 
 export default function GetDrinksDetailsByID  ({IDs, heading, route}:{IDs:string[], heading:string, route:string}) {

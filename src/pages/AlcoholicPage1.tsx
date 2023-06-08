@@ -1,7 +1,7 @@
 
 
 import { useEffect, useState } from "react"
-import { Mock_Data } from "../components/MOCK_DATA"
+import { Mock_Data } from "../data/MOCK_DATA"
 import { detailsDrink } from "../components/DisPlayDrinksOnPage"
 import { ButtonAdd, ButtonRemove } from "../components/ButtonAddRemove"
 import Body from "../components/Body"

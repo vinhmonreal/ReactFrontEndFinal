@@ -1,10 +1,10 @@
 
 import { useEffect, useState } from "react"
-import { Mock_Data } from "../components/MOCK_DATA"
+import { Mock_Data } from "../data/MOCK_DATA"
 import { detailsDrink } from "../components/DisPlayDrinksOnPage"
 import { ButtonAdd, ButtonRemove } from "../components/ButtonAddRemove"
 import Body from "../components/Body"
-import { Mock_Data_Nonalcoholic } from "../components/MOCK_DATA_NON_ALCOHOLIC"
+import { Mock_Data_Nonalcoholic } from "../data/MOCK_DATA_NON_ALCOHOLIC"
 
 const base_api_url = import.meta.env.VITE_APP_BASE_API
 

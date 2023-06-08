@@ -2,7 +2,7 @@
 import { useContext, useEffect, useState } from "react"
 import { AuthContext } from "../contexts/UserProvider"
 import { Spinner } from "react-bootstrap"
-import GetDrinksDetailsByID from "./GetDrinksDetailsByID"
+import GetDrinksDetailsByID from "../components/GetDrinksDetailsByID"
 import Body from "../components/Body"
 import { useParams } from "react-router-dom"
 const base_api_url = import.meta.env.VITE_APP_BASE_API
