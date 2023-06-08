@@ -1,20 +1,14 @@
-import { useEffect } from "react";
 import Body from "../components/Body";
 
 export default function LandingPage() {
-    useEffect(()=>{
-        const a = document.getElementsByClassName('hstack')[0] as HTMLElement
-        a.style.display = 'none'
-      },[])
     return (
-        <Body sidebar={true} header={false}>
+        <Body sidebar={true} header={true} footer={true}>
             <div className="landing-header">
-                <img className="item" src="https://cdn.pixabay.com/photo/2017/03/27/13/36/champagne-2178775_960_720.jpg" alt="" />
                 <h1>Welcome to My Drinks Full Stack Web App</h1>
-                <p>
+                <h4>
                     This is a website where you can find and share cocktail recipes as well as beverages. You can
                     also learn about the different types of cocktails and more...
-                </p>
+                </h4> <br />
             </div>
             <div className="items">
                 <li><img className="item" src="https://www.thecocktaildb.com/images/ingredients/gin-Medium.png" alt="" /><p>Gin</p></li>
@@ -40,10 +34,8 @@ export default function LandingPage() {
                 <li><img className="item" src="https://www.thecocktaildb.com/images/ingredients/Nocino-Medium.png" alt="" /><p>Nocino</p></li>
                 <li><img className="item" src="https://www.thecocktaildb.com/images/ingredients/Curacao-Medium.png" alt="" /><p>Curacao</p></li>
                 <li><img className="item" src="https://www.thecocktaildb.com/images/ingredients/Zima-Medium.png" alt="" /><p>Zima</p></li>
+                <li><img className="item" src="https://www.thecocktaildb.com/images/ingredients/Aperol-Medium.png" alt="" /><p>Aperol</p></li>
                 <li><img className="item" src="https://www.thecocktaildb.com/images/ingredients/Red Bull-Medium.png" alt="" /><p>Red Bull</p></li>
-              
-                           
-               
             </div>
         </Body>
     );

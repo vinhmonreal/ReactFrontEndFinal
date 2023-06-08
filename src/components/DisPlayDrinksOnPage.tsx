@@ -1,32 +1,34 @@
+
 export function DisplayDrinksOnPage ({ arrayOfDrinks, route,token, base_api_url }: { arrayOfDrinks: detailsDrink[], route: string, token:any, base_api_url:string }){
+ 
   const ButtonAdd  = async (id:string, token:string) => {
     if(!token){
         alert("Please login!!!")
         return
     }
-    const res = await fetch(`${base_api_url}/user/addfavdrinks`,{
-      method : 'POST',
-      headers : {
-        'Content-Type' : 'application/json',
-      },
-      body:JSON.stringify({
-        token: token,
-        idDrink: id,
-        strDrink: "dummy",
-        strDrinkThumb: "dummy"
-      })
+  const res = await fetch(`${base_api_url}/user/addfavdrinks`,{
+    method : 'POST',
+    headers : {
+      'Content-Type' : 'application/json',
+    },
+    body:JSON.stringify({
+      token: token,
+      idDrink: id,
+      strDrink: "dummy",
+      strDrinkThumb: "dummy"
     })
-    console.log(base_api_url)
-    if(res.ok){
-        alert("added to my list")
-      console.log("added to my list")
-    }
-    else{
-      console.log("error")
-    }
-    }
+  })
+  if(res.ok){
+      alert("added to my list")
+    console.log("added to my list")
+  }
+  else{
+    console.log("error")
+  }
+  }
   
   const ButtonRemove = async (id:string, token:string) => {
+
     if(!token){
         alert("Please login!!!")
         return
@@ -40,16 +42,17 @@ export function DisplayDrinksOnPage ({ arrayOfDrinks, route,token, base_api_url 
             token: token,
             idDrink: id,
         })
-        })
-        console.log(base_api_url)
-        if(res.ok){
-            alert("removed from my list")
-            console.log("removed from my list")
-        }
-        else{
-            console.log("error")
-        }
+      })
+
+    if(res.ok){
+        alert("removed from my list")
+        console.log("removed from my list")
+    }
+    else{
+        console.log("error")
+    }
   }
+
   return (
     <div>
       {arrayOfDrinks.map((drink) => {
@@ -88,7 +91,6 @@ export function DisplayDrinksOnPage ({ arrayOfDrinks, route,token, base_api_url 
     </div>
   )
 }
-
 
 export interface detailsDrink {
   idDrink: any;

@@ -1,3 +1,4 @@
+
 import { useContext, useEffect, useRef } from 'react'
 import Body from '../components/Body';
 import { AuthContext } from '../contexts/UserProvider';
@@ -25,7 +26,6 @@ export default function LoginPage() {
       method : "POST",
       headers : {
         'Content-Type' : 'application/json',
-        "Access-Control-Allow-Origin": "*", // Required for CORS support to work
       },
       body: JSON.stringify({
         username: usernameField.current?.value,
@@ -41,6 +41,8 @@ export default function LoginPage() {
         username: usernameField.current?.value || '',
         loggedIn: true,
       })
+    } else if(res.status === 404){
+      alert('Incorrect username or password')
     }
   }
   useEffect(()=>{
@@ -49,16 +51,16 @@ export default function LoginPage() {
   },[])
   
   return (
-    <Body sidebar={false} header={true} >
-      <h2>LoginPage</h2>
+    <Body sidebar={false} header={true} footer={false} >
       <form onSubmit={handleLoginForm} className='form'>
+        <label><h3>Sign In</h3></label>
         <label>Username:<br/>
-          <input type="text" ref={usernameField}/>
+          <input className="form-input" type="text" ref={usernameField}/>
         </label><br/><br/>
         <label>Password:<br/>
-          <input type="password" ref={passwordField}/>
+          <input className="form-input" type="password" ref={passwordField}/>
         </label><br/><br/>
-        <button>Sign In</button> <br />
+        <button >Sign In</button> <br/><br/>
       <label >Need an account? </label><a href="/register">Register</a>
       </form> 
     </Body>

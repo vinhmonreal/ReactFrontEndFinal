@@ -10,17 +10,15 @@ import SearchForRecipe from './pages/SearchForRecipe';
 import NonAlcoholicDrinks from './pages/NonAlcoholic';
 import LandingPage from './pages/LandingPage';
 
-
 function App() {
-  return (
-   
+  return (   
     <Container className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage/>} />
           <Route path="/UserPage/:username" element={<UserPage />} />
-          <Route path="/alcoholic" element={<AlcoholicDrinks/>} />
-          <Route path="/nonalcoholic" element={<NonAlcoholicDrinks/>} />
+          <Route path="/alcoholic" element={AlcoholicDrinks()} />
+          <Route path="/nonalcoholic" element={NonAlcoholicDrinks()} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<Register />} />
           <Route path="/logout" element={<Logout />} />
@@ -30,7 +28,6 @@ function App() {
         </Routes>
       </BrowserRouter>
     </Container>
-
   );
 }
 

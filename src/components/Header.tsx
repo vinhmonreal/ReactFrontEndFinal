@@ -1,14 +1,15 @@
 export default function Header() {
     return (
-        <>
-        </>
+        <div className="header-div">
+            <img src="https://cdn.pixabay.com/photo/2016/11/29/15/05/drink-1870139_960_720.jpg" alt="random drink" />
+        </div>
     );
 }
 
 
 
 // import { useEffect, useState } from "react";
-// import { randomImg } from "./RANDOM_IMG";
+// import { randomImg } from "../pages/RANDOM_IMG";
 
 // export default function Header() {
 //     // get new random image evry 5 seconds
@@ -22,7 +23,7 @@ export default function Header() {
 //     console.log(randomImage);
 //     return (
 //         <div key={randomImage} className="header-div">
-//             <img src={randomImage} alt="random drink" />
+//             <img src={randomImage} alt="" />
 //         </div>
 //     );
 // }

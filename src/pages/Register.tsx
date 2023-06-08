@@ -5,12 +5,12 @@ import Body from "../components/Body"
 
 
 export default function Register() {
+
   const usernameField = useRef<HTMLInputElement>(null)
   const emailField = useRef<HTMLInputElement>(null)
   const passwordField = useRef<HTMLInputElement>(null)
   const { user, setUser } = useContext(AuthContext)
   const navigate = useNavigate()
-
   const base_api_url = import.meta.env.VITE_APP_BASE_API
 
   useEffect(()=>{
@@ -36,39 +36,40 @@ export default function Register() {
     })
     if(res.ok){
       const data = await res.json()
+      const username = data.username
+      const token = data.token
       console.log(data)
-      localStorage.setItem('token',JSON.stringify(data.token))
-      localStorage.setItem('username',JSON.stringify(usernameField.current?.value))
-      console.log(data)
+      localStorage.setItem('token',JSON.stringify(token))
+      localStorage.setItem('username',JSON.stringify(username))
       setUser({
         loggedIn:true, 
-        username:usernameField.current?.value || '',
-        token:data.token
+        username: username,
+        token:token
       })
-      navigate('/')
-    }
-  }
-    useEffect(()=>{
-      const a = document.getElementsByClassName('hstack')[0] as HTMLElement
-      a.style.display = 'none'
-    },[])
-  
-     
-   
+      console.log(user)
+      window.location.reload()
+      navigate('/login')  
+    } else if(res.status === 409){
+      alert('Username or Email already exists')
+    } else if (res.status === 408){
+      alert('Username must be a string')
+    }    
+  }  
+  // bootstrap elert
+  // <div className="alert alert-danger" role="alert">
 
   return (
-    <Body sidebar={false} header={false}>
-      
-      <h2>Register Page</h2>
-      <form onSubmit={handleRegisterForm}>
+    <Body sidebar={false} header={false}  footer={false}>
+      <form onSubmit={handleRegisterForm} className="form">
+        <label><h3>Register</h3></label>
         <label>Username:<br/>
-          <input type="text" ref={usernameField}/>
+          <input className="form-input" type="text" ref={usernameField}/>
         </label><br/><br/>
         <label>Email:<br/>
-          <input type="email" ref={emailField}/>
+          <input className="form-input" type="email" ref={emailField}/>
         </label><br/><br/>
         <label>Password:<br/>
-          <input type="password" ref={passwordField}/>
+          <input className="form-input" type="password" ref={passwordField}/>
         </label><br/><br/>
         <button>Register</button>
       </form>

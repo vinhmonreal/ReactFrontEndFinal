@@ -1,5 +1,4 @@
 
-
 import { useEffect, useState } from "react";
 import Body from "../components/Body";
 
@@ -15,6 +14,7 @@ interface Ingredient {
 type Ingredients = Ingredient[] | null;
 
 export default function Learn() {
+    
     const [search, setSearch] = useState("");
     const [ingredients, setIngredients] = useState<Ingredients>(null);
 
@@ -33,8 +33,8 @@ export default function Learn() {
     , [search]);
 
     return (
-        <Body sidebar={true} header={true}>
-        <div >
+        <Body sidebar={true} header={false}footer={false}>
+        <div className="form" id="form">
             <input
                 className="form-input"
                 type="text"
@@ -46,7 +46,7 @@ export default function Learn() {
                 <p className="result-h1">No ingredients found</p>
             ) : (
                 ingredients?.map((ingredient) => (
-                    <div className="learn-card">
+                    <div className="learn-card" key={'learncard'}>
                         <h3>{ingredient.strIngredient}</h3>
                         <p>{ingredient.strDescription}</p>
                         <p>TYPE : {ingredient.strType}</p>

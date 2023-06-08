@@ -1,9 +1,5 @@
 
-
-
-export const Mock_Data=  [
-  
-    
+export const Mock_Data=  [    
     {
       idDrink: '14598',
       strDrink: '50/50',
@@ -3167,70 +3163,7 @@ export const Mock_Data=  [
     dateModified: '2016-08-31 19:35:46'
   }
 ,
-  {
-    idDrink: '12792',
-    strDrink: 'Amaretto Liqueur',
-    strDrinkAlternate: null,
-    strTags: null,
-    strVideo: null,
-    strCategory: 'Homemade Liqueur',
-    strIBA: null,
-    strAlcoholic: 'Alcoholic',
-    strGlass: 'Collins Glass',
-    strInstructions: 'Combine sugar and 3/4 cup water in a small saucepan. Bring to a boil, stirring constantly. Reduce heat and simmer until all sugar is dissolved. Remove from heat and cool. In an aging container, combine apricot halves, almond extract, grain alcohol with 1/2 cup water, and brandy. Stir in cooled sugar syrup mixture. Cap and let age for 2 days. Remove apricot halves. (Save apricot halves, can be used for cooking). Add food coloring and glycerine. Stir, recap and continue aging for 1 to 2 months. Re-bottle as desired. Liqueur is ready to serve but will continue to improve with additional aging.',
-    strInstructionsES: 'Combine el azúcar y 3/4 taza de agua en una cacerola pequeña. Hacer hervir removiendo constantemente. Reduzca el fuego y cocine hasta que todo el azúcar se disuelva. Retirar del fuego y dejar enfriar. En un recipiente de maduración, mezcle las mitades de albaricoque, el extracto de almendras, el alcohol de grano con 1/2 taza de agua y brandy. Mezcle el jarabe de azúcar enfriado. Cubrir y dejar envejecer durante 2 días. Retire las mitades de albaricoque (guarde las mitades de albaricoque, se pueden usar para cocinar). Agregue colorante alimentario y glicerina. Revuelva, cubra y continúe envejeciendo durante 1 a 2 meses. Vuelva a embotellar como desee. El licor está listo para servir, pero seguirá mejorando con el envejecimiento.',
-    strInstructionsDE: 'Zucker und 3/4 Tassen Wasser in einem kleinen Topf vermengen, unter ständigem Rühren zum Kochen bringen. Hitze reduzieren und köcheln lassen, bis der gesamte Zucker gelöst ist. Vom Herd nehmen und abkühlen lassen. In einem Alterungsbehälter Aprikosenhälften, Mandel-Extrakt, Getreidealkohol mit 1/2 Tasse Wasser und Brandy vermengen. Gekühlte Zuckersirupmischung unterrühren. Verschließen und 2 Tage ruhen lassen. Aprikosenhälften entfernen. (Außer Aprikosenhälften, kann zum Kochen verwendet werden). Füge Lebensmittelfarbe und Glyzerin hinzu. Rühren, einarbeiten und 1 bis 2 Monate lang lagern. Nach Belieben wieder auffüllen. Der Likör ist servierfertig, wird sich aber mit zunehmender Reifung weiter verbessern.',
-    strInstructionsFR: null,
-    strInstructionsIT: "Unisci lo zucchero e 3/4 di tazza d'acqua in una piccola casseruola.\r\n" +
-      'Porta a ebollizione mescolando continuamente.\r\n' +
-      'Ridurre la fiamma e cuocere a fuoco lento finché tutto lo zucchero non si sarà sciolto.\r\n' +
-      'Togli dal fuoco e lascia raffreddare.\r\n' +
-      "In un contenitore di invecchiamento, unisci le metà di albicocche, l'estratto di mandorle, l'alcol di cereali con 1/2 tazza di acqua e il brandy.\r\n" +
-      'Mescolare la miscela di sciroppo di zucchero raffreddata.\r\n' +
-      'Tappare e lasciare invecchiare per 2 giorni.\r\n' +
-      "Rimuovere le metà dell'albicocca.Aggiungi colorante alimentare e glicerina.\r\n" +
-      'Mescola, ricapitola e continua a invecchiare per 1 o 2 mesi.\r\n' +
-      'Re-imbottigliare come desiderato.\r\n' +
-      "Il liquore è pronto per essere servito ma continuerà a migliorare con l'ulteriore invecchiamento.",
-    'strInstructionsZH-HANS': null,
-    'strInstructionsZH-HANT': null,
-    strDrinkThumb: 'https://www.thecocktaildb.com/images/media/drink/swqxuv1472719649.jpg',
-    strIngredient1: 'Sugar',
-    strIngredient2: 'Water',
-    strIngredient3: 'Apricot',
-    strIngredient4: 'Almond flavoring',
-    strIngredient5: 'Grain alcohol',
-    strIngredient6: 'Water',
-    strIngredient7: 'Brandy',
-    strIngredient8: 'Food coloring',
-    strIngredient9: 'Food coloring',
-    strIngredient10: 'Food coloring',
-    strIngredient11: 'Glycerine',
-    strIngredient12: null,
-    strIngredient13: null,
-    strIngredient14: null,
-    strIngredient15: null,
-    strMeasure1: '1 cup',
-    strMeasure2: '3/4 cup ',
-    strMeasure3: '2 ',
-    strMeasure4: '1 tblsp ',
-    strMeasure5: '1/2 cup pure ',
-    strMeasure6: '1/2 cup ',
-    strMeasure7: '1 cup ',
-    strMeasure8: '3 drops yellow ',
-    strMeasure9: '6 drops red ',
-    strMeasure10: '2 drops blue ',
-    strMeasure11: '1/2 tsp ',
-    strMeasure12: null,
-    strMeasure13: null,
-    strMeasure14: null,
-    strMeasure15: null,
-    strImageSource: null,
-    strImageAttribution: null,
-    strCreativeCommonsConfirmed: 'No',
-    dateModified: '2016-09-01 09:47:29'
-  }
-,
+  
   {
     idDrink: '13731',
     strDrink: 'Amaretto Sour',
@@ -4481,68 +4414,7 @@ export const Mock_Data=  [
     strCreativeCommonsConfirmed: 'No',
     dateModified: '2017-04-24 22:30:41'
   }
-,
-  {
-    idDrink: '12794',
-    strDrink: 'Angelica Liqueur',
-    strDrinkAlternate: null,
-    strTags: null,
-    strVideo: null,
-    strCategory: 'Homemade Liqueur',
-    strIBA: null,
-    strAlcoholic: 'Alcoholic',
-    strGlass: 'Collins Glass',
-    strInstructions: 'Combine all herbs, nuts and spices with vodka in a 1 quart or larger aging container. Cap tightly and shake daily for 2 weeks. Strain through a fine muslin cloth or coffee filter, discarding solids. Clean out aging container. Place liquid back in container. Place sugar and water in saucepan and stir to combine over medium heat. When sugar is completely dissolved, set aside and let cool. When cool combine with food coloring and add to liqueur liquid. Cap and allow to age and mellow in a cool, dark place for one month.',
-    strInstructionsES: 'Combine todas las hierbas, nueces y especias con vodka en un recipiente de maduración de 1 litro o más. Tape bien y agite diariamente durante 2 semanas. Cuele a través de una tela de muselina fina o un filtro de café, desechando los sólidos. Limpiar el recipiente. Vuelva a colocar el líquido en el recipiente. Coloque el azúcar y el agua en una cacerola a fuego medio y revuelva para disolver el azúcar. Cuando el azúcar se haya disuelto por completo, reservar y dejar enfriar. Cuando esté frío, mezclar con colorante alimentario y añadir al licor líquido. Cubra y deje madurar en un lugar fresco y oscuro durante un mes.',
-    strInstructionsDE: 'Vermengen Sie alle Kräuter, Nüsse und Gewürze mit Wodka in einem 1 Liter, oder größerem Alterungsbehälter. Verschließen Sie das Produkt fest und schütteln Sie es täglich für 2 Wochen. Durch ein feines Musselintuch oder einen Kaffeefilter abseihen und dabei Feststoffe entfernen. Alterungsbehälter reinigen. Geben Sie die Flüssigkeit wieder in den Behälter zurück. Zucker und Wasser in einen Topf geben und bei mittlerer Hitze unter Rühren vermengen. Wenn der Zucker vollständig aufgelöst ist, beiseite stellen und abkühlen lassen. Nach dem Abkühlen mit der Lebensmittelfarbe mischen und in die Likörflüssigkeit geben. Verschließen und einen Monat lang an einem kühlen, dunklen Ort lagern und reifen lassen.',
-    strInstructionsFR: null,
-    strInstructionsIT: 'Unisci tutte le erbe, le noci e le spezie con la vodka in un contenitore di invecchiamento da 1 quarto o più grande.\r\n' +
-      'Tappare bene e agitare ogni giorno per 2 settimane.\r\n' +
-      'Filtrare attraverso un panno di mussola fine o un filtro da caffè, scartando i solidi.\r\n' +
-      'Pulisci il contenitore di invecchiamento.\r\n' +
-      'Riporre il liquido nel contenitore.\r\n' +
-      "Mettere lo zucchero e l'acqua nella casseruola e mescolare per unire a fuoco medio.\r\n" +
-      'Quando lo zucchero sarà completamente sciolto, mettete da parte e lasciate raffreddare.\r\n' +
-      'Quando è freddo unire al colorante alimentare e aggiungere al liquido liquoroso.\r\n' +
-      'Tappare e lasciare invecchiare e ammorbidire in un luogo fresco e buio per un mese.',
-    'strInstructionsZH-HANS': null,
-    'strInstructionsZH-HANT': null,
-    strDrinkThumb: 'https://www.thecocktaildb.com/images/media/drink/yuurps1472667672.jpg',
-    strIngredient1: 'Angelica root',
-    strIngredient2: 'Almond',
-    strIngredient3: 'Allspice',
-    strIngredient4: 'Cinnamon',
-    strIngredient5: 'Anise',
-    strIngredient6: 'Coriander',
-    strIngredient7: 'Marjoram leaves',
-    strIngredient8: 'Vodka',
-    strIngredient9: 'Sugar',
-    strIngredient10: 'Water',
-    strIngredient11: 'Food coloring',
-    strIngredient12: 'Food coloring',
-    strIngredient13: null,
-    strIngredient14: null,
-    strIngredient15: null,
-    strMeasure1: '3 tblsp chopped',
-    strMeasure2: '1 tblsp chopped ',
-    strMeasure3: '1 cracked ',
-    strMeasure4: '1 one-inch ',
-    strMeasure5: '3-6 crushed ',
-    strMeasure6: '1/8 tsp powdered ',
-    strMeasure7: '1 tblsp fresh chopped ',
-    strMeasure8: '1.5 cup ',
-    strMeasure9: '1/2 cup granulated ',
-    strMeasure10: '1/4 cup ',
-    strMeasure11: '1 drop yellow ',
-    strMeasure12: '1 drop green ',
-    strMeasure13: null,
-    strMeasure14: null,
-    strMeasure15: null,
-    strImageSource: null,
-    strImageAttribution: null,
-    strCreativeCommonsConfirmed: 'No',
-    dateModified: '2016-08-31 19:21:12'
-  }
+
 ,
   {
     idDrink: '14306',
@@ -5581,70 +5453,7 @@ export const Mock_Data=  [
     dateModified: '2016-08-31 19:35:46'
   }
 ,
-  {
-    idDrink: '12792',
-    strDrink: 'Amaretto Liqueur',
-    strDrinkAlternate: null,
-    strTags: null,
-    strVideo: null,
-    strCategory: 'Homemade Liqueur',
-    strIBA: null,
-    strAlcoholic: 'Alcoholic',
-    strGlass: 'Collins Glass',
-    strInstructions: 'Combine sugar and 3/4 cup water in a small saucepan. Bring to a boil, stirring constantly. Reduce heat and simmer until all sugar is dissolved. Remove from heat and cool. In an aging container, combine apricot halves, almond extract, grain alcohol with 1/2 cup water, and brandy. Stir in cooled sugar syrup mixture. Cap and let age for 2 days. Remove apricot halves. (Save apricot halves, can be used for cooking). Add food coloring and glycerine. Stir, recap and continue aging for 1 to 2 months. Re-bottle as desired. Liqueur is ready to serve but will continue to improve with additional aging.',
-    strInstructionsES: 'Combine el azúcar y 3/4 taza de agua en una cacerola pequeña. Hacer hervir removiendo constantemente. Reduzca el fuego y cocine hasta que todo el azúcar se disuelva. Retirar del fuego y dejar enfriar. En un recipiente de maduración, mezcle las mitades de albaricoque, el extracto de almendras, el alcohol de grano con 1/2 taza de agua y brandy. Mezcle el jarabe de azúcar enfriado. Cubrir y dejar envejecer durante 2 días. Retire las mitades de albaricoque (guarde las mitades de albaricoque, se pueden usar para cocinar). Agregue colorante alimentario y glicerina. Revuelva, cubra y continúe envejeciendo durante 1 a 2 meses. Vuelva a embotellar como desee. El licor está listo para servir, pero seguirá mejorando con el envejecimiento.',
-    strInstructionsDE: 'Zucker und 3/4 Tassen Wasser in einem kleinen Topf vermengen, unter ständigem Rühren zum Kochen bringen. Hitze reduzieren und köcheln lassen, bis der gesamte Zucker gelöst ist. Vom Herd nehmen und abkühlen lassen. In einem Alterungsbehälter Aprikosenhälften, Mandel-Extrakt, Getreidealkohol mit 1/2 Tasse Wasser und Brandy vermengen. Gekühlte Zuckersirupmischung unterrühren. Verschließen und 2 Tage ruhen lassen. Aprikosenhälften entfernen. (Außer Aprikosenhälften, kann zum Kochen verwendet werden). Füge Lebensmittelfarbe und Glyzerin hinzu. Rühren, einarbeiten und 1 bis 2 Monate lang lagern. Nach Belieben wieder auffüllen. Der Likör ist servierfertig, wird sich aber mit zunehmender Reifung weiter verbessern.',
-    strInstructionsFR: null,
-    strInstructionsIT: "Unisci lo zucchero e 3/4 di tazza d'acqua in una piccola casseruola.\r\n" +
-      'Porta a ebollizione mescolando continuamente.\r\n' +
-      'Ridurre la fiamma e cuocere a fuoco lento finché tutto lo zucchero non si sarà sciolto.\r\n' +
-      'Togli dal fuoco e lascia raffreddare.\r\n' +
-      "In un contenitore di invecchiamento, unisci le metà di albicocche, l'estratto di mandorle, l'alcol di cereali con 1/2 tazza di acqua e il brandy.\r\n" +
-      'Mescolare la miscela di sciroppo di zucchero raffreddata.\r\n' +
-      'Tappare e lasciare invecchiare per 2 giorni.\r\n' +
-      "Rimuovere le metà dell'albicocca.Aggiungi colorante alimentare e glicerina.\r\n" +
-      'Mescola, ricapitola e continua a invecchiare per 1 o 2 mesi.\r\n' +
-      'Re-imbottigliare come desiderato.\r\n' +
-      "Il liquore è pronto per essere servito ma continuerà a migliorare con l'ulteriore invecchiamento.",
-    'strInstructionsZH-HANS': null,
-    'strInstructionsZH-HANT': null,
-    strDrinkThumb: 'https://www.thecocktaildb.com/images/media/drink/swqxuv1472719649.jpg',
-    strIngredient1: 'Sugar',
-    strIngredient2: 'Water',
-    strIngredient3: 'Apricot',
-    strIngredient4: 'Almond flavoring',
-    strIngredient5: 'Grain alcohol',
-    strIngredient6: 'Water',
-    strIngredient7: 'Brandy',
-    strIngredient8: 'Food coloring',
-    strIngredient9: 'Food coloring',
-    strIngredient10: 'Food coloring',
-    strIngredient11: 'Glycerine',
-    strIngredient12: null,
-    strIngredient13: null,
-    strIngredient14: null,
-    strIngredient15: null,
-    strMeasure1: '1 cup',
-    strMeasure2: '3/4 cup ',
-    strMeasure3: '2 ',
-    strMeasure4: '1 tblsp ',
-    strMeasure5: '1/2 cup pure ',
-    strMeasure6: '1/2 cup ',
-    strMeasure7: '1 cup ',
-    strMeasure8: '3 drops yellow ',
-    strMeasure9: '6 drops red ',
-    strMeasure10: '2 drops blue ',
-    strMeasure11: '1/2 tsp ',
-    strMeasure12: null,
-    strMeasure13: null,
-    strMeasure14: null,
-    strMeasure15: null,
-    strImageSource: null,
-    strImageAttribution: null,
-    strCreativeCommonsConfirmed: 'No',
-    dateModified: '2016-09-01 09:47:29'
-  }
-,
+  
   {
     idDrink: '13731',
     strDrink: 'Amaretto Sour',
@@ -6896,68 +6705,6 @@ export const Mock_Data=  [
     strImageAttribution: null,
     strCreativeCommonsConfirmed: 'No',
     dateModified: '2017-04-24 22:30:41'
-  }
-,
-  {
-    idDrink: '12794',
-    strDrink: 'Angelica Liqueur',
-    strDrinkAlternate: null,
-    strTags: null,
-    strVideo: null,
-    strCategory: 'Homemade Liqueur',
-    strIBA: null,
-    strAlcoholic: 'Alcoholic',
-    strGlass: 'Collins Glass',
-    strInstructions: 'Combine all herbs, nuts and spices with vodka in a 1 quart or larger aging container. Cap tightly and shake daily for 2 weeks. Strain through a fine muslin cloth or coffee filter, discarding solids. Clean out aging container. Place liquid back in container. Place sugar and water in saucepan and stir to combine over medium heat. When sugar is completely dissolved, set aside and let cool. When cool combine with food coloring and add to liqueur liquid. Cap and allow to age and mellow in a cool, dark place for one month.',
-    strInstructionsES: 'Combine todas las hierbas, nueces y especias con vodka en un recipiente de maduración de 1 litro o más. Tape bien y agite diariamente durante 2 semanas. Cuele a través de una tela de muselina fina o un filtro de café, desechando los sólidos. Limpiar el recipiente. Vuelva a colocar el líquido en el recipiente. Coloque el azúcar y el agua en una cacerola a fuego medio y revuelva para disolver el azúcar. Cuando el azúcar se haya disuelto por completo, reservar y dejar enfriar. Cuando esté frío, mezclar con colorante alimentario y añadir al licor líquido. Cubra y deje madurar en un lugar fresco y oscuro durante un mes.',
-    strInstructionsDE: 'Vermengen Sie alle Kräuter, Nüsse und Gewürze mit Wodka in einem 1 Liter, oder größerem Alterungsbehälter. Verschließen Sie das Produkt fest und schütteln Sie es täglich für 2 Wochen. Durch ein feines Musselintuch oder einen Kaffeefilter abseihen und dabei Feststoffe entfernen. Alterungsbehälter reinigen. Geben Sie die Flüssigkeit wieder in den Behälter zurück. Zucker und Wasser in einen Topf geben und bei mittlerer Hitze unter Rühren vermengen. Wenn der Zucker vollständig aufgelöst ist, beiseite stellen und abkühlen lassen. Nach dem Abkühlen mit der Lebensmittelfarbe mischen und in die Likörflüssigkeit geben. Verschließen und einen Monat lang an einem kühlen, dunklen Ort lagern und reifen lassen.',
-    strInstructionsFR: null,
-    strInstructionsIT: 'Unisci tutte le erbe, le noci e le spezie con la vodka in un contenitore di invecchiamento da 1 quarto o più grande.\r\n' +
-      'Tappare bene e agitare ogni giorno per 2 settimane.\r\n' +
-      'Filtrare attraverso un panno di mussola fine o un filtro da caffè, scartando i solidi.\r\n' +
-      'Pulisci il contenitore di invecchiamento.\r\n' +
-      'Riporre il liquido nel contenitore.\r\n' +
-      "Mettere lo zucchero e l'acqua nella casseruola e mescolare per unire a fuoco medio.\r\n" +
-      'Quando lo zucchero sarà completamente sciolto, mettete da parte e lasciate raffreddare.\r\n' +
-      'Quando è freddo unire al colorante alimentare e aggiungere al liquido liquoroso.\r\n' +
-      'Tappare e lasciare invecchiare e ammorbidire in un luogo fresco e buio per un mese.',
-    'strInstructionsZH-HANS': null,
-    'strInstructionsZH-HANT': null,
-    strDrinkThumb: 'https://www.thecocktaildb.com/images/media/drink/yuurps1472667672.jpg',
-    strIngredient1: 'Angelica root',
-    strIngredient2: 'Almond',
-    strIngredient3: 'Allspice',
-    strIngredient4: 'Cinnamon',
-    strIngredient5: 'Anise',
-    strIngredient6: 'Coriander',
-    strIngredient7: 'Marjoram leaves',
-    strIngredient8: 'Vodka',
-    strIngredient9: 'Sugar',
-    strIngredient10: 'Water',
-    strIngredient11: 'Food coloring',
-    strIngredient12: 'Food coloring',
-    strIngredient13: null,
-    strIngredient14: null,
-    strIngredient15: null,
-    strMeasure1: '3 tblsp chopped',
-    strMeasure2: '1 tblsp chopped ',
-    strMeasure3: '1 cracked ',
-    strMeasure4: '1 one-inch ',
-    strMeasure5: '3-6 crushed ',
-    strMeasure6: '1/8 tsp powdered ',
-    strMeasure7: '1 tblsp fresh chopped ',
-    strMeasure8: '1.5 cup ',
-    strMeasure9: '1/2 cup granulated ',
-    strMeasure10: '1/4 cup ',
-    strMeasure11: '1 drop yellow ',
-    strMeasure12: '1 drop green ',
-    strMeasure13: null,
-    strMeasure14: null,
-    strMeasure15: null,
-    strImageSource: null,
-    strImageAttribution: null,
-    strCreativeCommonsConfirmed: 'No',
-    dateModified: '2016-08-31 19:21:12'
   }
 ,
   {

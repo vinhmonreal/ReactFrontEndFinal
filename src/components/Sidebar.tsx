@@ -1,3 +1,4 @@
+
 import { useContext, useEffect } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -5,8 +6,8 @@ import { NavLink } from 'react-router-dom';
 import { AuthContext } from '../contexts/UserProvider';
 
 export default function Sidebar() {
-  const { user, setUser } = useContext(AuthContext);
 
+  const { user, setUser } = useContext(AuthContext);
   useEffect(() => {
     const storedToken = localStorage.getItem('token');
     if (storedToken && !user.token) {
@@ -27,7 +28,7 @@ export default function Sidebar() {
       </Nav.Item>
       <Nav.Item>
             <Nav.Link as={NavLink} to={"/nonalcoholic"}>
-              Non Alcoholic
+              NonAlcoholic
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
@@ -50,7 +51,7 @@ export default function Sidebar() {
          
           <Nav.Item>
             <Nav.Link as={NavLink} to={`/UserPage/${user.username}`}>
-              My Page
+              MyPage
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
@@ -72,8 +73,7 @@ export default function Sidebar() {
             </Nav.Link>
           </Nav.Item>
         </>
-      )}
-     
+      )}     
     </Navbar>
   );
 }
